@@ -1,0 +1,55 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "SpatialAudioEngine",
+"language": "GDScript",
+"path": "res://scripts/SpatialAudioEngine.gd"
+}, {
+"base": "Node",
+"class": "CombatSystem",
+"language": "GDScript",
+"path": "res://scripts/CombatSystem.gd"
+}, {
+"base": "Node",
+"class": "CraftingSystem",
+"language": "GDScript",
+"path": "res://scripts/CraftingSystem.gd"
+}, {
+"base": "Node",
+"class": "AINavigationSystem",
+"language": "GDScript",
+"path": "res://scripts/AINavigationSystem.gd"
+} ]
+_global_script_class_icons={
+"SpatialAudioEngine": "",
+"CombatSystem": "",
+"CraftingSystem": "",
+"AINavigationSystem": ""
+}
+
+[application]
+
+config/name="Saudi War RPG"
+config/description="أول لعبة RPG حربية سعودية مخصصة للمكفوفين - حرب الصحراء الشاملة"
+run/main_scene="res://scenes/MainScene.tscn"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
